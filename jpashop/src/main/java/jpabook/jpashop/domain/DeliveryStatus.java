@@ -3,6 +3,6 @@ package jpabook.jpashop.domain;
 import jakarta.persistence.Embeddable;
 
 @Embeddable
-public class DeliveryStatus {
-
+public enum DeliveryStatus {
+    READY, COMP;
 }
