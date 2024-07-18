@@ -13,4 +13,12 @@ public class HelloController {
 
         return "hello";
     }
+
+
+    @GetMapping("test")
+    public String hello(Model model) {
+        model.addAttribute("data", "test!");
+
+        return "test";
+    }
 }
