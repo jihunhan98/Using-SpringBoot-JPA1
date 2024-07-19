@@ -8,6 +8,7 @@ public class JpashopApplication {
 
 	public static void main(String[] args) {
 		if (isBuildFailConditionMet()) {
+			System.out.println("CI / CD 테스트!");
 			throw new RuntimeException("빌드 실패 조건이 충족되었습니다.");
 		}
 
