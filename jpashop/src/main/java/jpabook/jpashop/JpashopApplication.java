@@ -8,11 +8,9 @@ public class JpashopApplication {
 
 	public static void main(String[] args) {
 		// 빌드를 실패시키기 위한 예제: 특정 조건에서 RuntimeException 발생
-		if (isBuildFailConditionMet()) {
-			throw new RuntimeException("Jenkins 빌드 실패 예제: 강제 예외 발생");
-		}
+		throw new RuntimeException();
 
-		SpringApplication.run(JpashopApplication.class, args);
+//		SpringApplication.run(JpashopApplication.class, args);
 	}
 
 	private static boolean isBuildFailConditionMet() {
